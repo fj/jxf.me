@@ -1,6 +1,21 @@
-*.DS_Store
-*.scssc
-.sass-cache/
-sass-cache/
+*.gem
+*.rbc
+.bundle
+.cache
+.config
+.DS_Store
+.sass-cache
+coverage
+InstalledFiles
+lib/bundler/man
+pkg
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp
 
-build/
+# YARD artifacts
+.yardoc
+_yardoc
+doc/
