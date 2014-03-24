@@ -1,0 +1,36 @@
+//Typographic styles
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic|PT+Sans:400,700,400italic,700italic|Inconsolata:400,700);
+$font-text: 'PT Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$font-header: 'Arvo', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$font-code: 'Inconsolata', 'Source Code Pro', Monospace;
+h1,
+h2,
+h3{
+  font-family: $font-header;
+  font-weight: 700;
+  padding: 10px 0px 10px 0px;
+  line-height: 1;
+}
+h1{
+  font-size: 30px;
+}
+h2{
+  font-size: 22px;
+}
+h3{
+  font-size: 18px;
+}
+pre,
+code,
+table,
+li,
+p{
+  font-size: 14px;
+}
+p{
+  padding: 10px 0px 10px 0px;
+}
+pre,
+code{
+  font-family: $font-code;
+}

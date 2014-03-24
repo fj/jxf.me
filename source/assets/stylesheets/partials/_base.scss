@@ -1,0 +1,93 @@
+//Individual element and layout specific styles
+body{
+  background-color: #fff;
+  font-family: $font-text;
+  img{
+    width: 100%;
+    height: auto;
+  }
+  a{
+    text-decoration: none;
+    color: $c_standard;
+  }
+}
+$base-padding: 50px 0px 50px 0px;
+.logo{
+  width: 120px;
+  height: 120px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  font-size: 45px;
+  color: $c-base-light;
+  line-height: 95px;
+  text-align: center;
+  border: 5px solid $c-base-light;
+  margin: auto;
+}
+nav{
+  width: 100%;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: $c-standard;
+  padding: 20px;
+  ul{
+    text-align: center;
+    li{
+      text-align: center;
+      display: inline-block;
+      margin: 0px 10px 0px 10px;
+      a{
+        color: $c-base-light;
+        font-size: 16px;
+      }
+    }
+  }
+}
+.name{
+  font-size: 30px;
+  line-height: 2;
+  padding: 10px 0px 10px;
+  font-family: $font-text;
+  color: $c-base-light;
+  text-align: center;
+}
+.title{
+  max-width: 500px;
+  margin: auto;
+  width: 100%;
+  font-family: $font-text;
+  text-align: center;
+  line-height: 2;
+  color: $c-light;
+  padding: 0px;
+}
+.splash{
+  background: url(../images/bg.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: $base-padding;
+}
+section{
+  padding: $base-padding;
+  p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $c-mid;
+  }
+}
+img.profile{
+  display: block;
+  max-width: 400px;
+  max-height: 400px;
+  margin: auto;
+}
+footer{
+  p{
+    text-align: center;
+  }
+}
