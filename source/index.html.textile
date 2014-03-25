@@ -1,7 +1,7 @@
 ---
 title: TODO This is the homepage title
 description: TODO This is the homepage description
-layout: homepage
+layout: layout_homepage
 ---
 
 <div class="splash">
@@ -14,7 +14,7 @@ h3(title). Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel
 
 </div>
 <section>
-<div class="contain contain-pad">
+<div class="contain">
 <div class="col-6-12">
 !(profile)http://placehold.it/400x200!
 </div>

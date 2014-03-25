@@ -1,4 +1,8 @@
 //Individual element and layout specific styles
+$base-padding: 50px 10px 50px 10px;
+$mid-padding: 20px 10px 20px 10px;
+$mid-padding: 10px;
+
 body{
   background-color: #fff;
   font-family: $font-text;
@@ -11,7 +15,6 @@ body{
     color: $c_standard;
   }
 }
-$base-padding: 50px 0px 50px 0px;
 .logo{
   width: 120px;
   height: 120px;
@@ -19,10 +22,10 @@ $base-padding: 50px 0px 50px 0px;
   -moz-border-radius: 60px;
   border-radius: 60px;
   font-size: 45px;
-  color: $c-base-light;
+  color: $c-standard;
   line-height: 95px;
   text-align: center;
-  border: 5px solid $c-base-light;
+  border: 5px solid $c-standard;
   margin: auto;
 }
 nav{
@@ -50,7 +53,7 @@ nav{
   line-height: 2;
   padding: 10px 0px 10px;
   font-family: $font-text;
-  color: $c-base-light;
+  color: $c-standard;
   text-align: center;
 }
 .title{
@@ -64,11 +67,7 @@ nav{
   padding: 0px;
 }
 .splash{
-  background: url(../images/bg.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: #e3e3e3;
   padding: $base-padding;
 }
 section{
@@ -87,7 +86,23 @@ img.profile{
   margin: auto;
 }
 footer{
-  p{
-    text-align: center;
+  @extend .cf;
+  background-color: $c-standard;
+  padding: $mid-padding;
+  p.left{
+    float: left;
+    color: $c_base-light;
+  }
+  ul.right{
+    float: right;
+  }
+  ul{
+    li{
+      display: inline-block;
+      margin: 10px 0px 0px 10px;
+      a{
+        color: $c_base-light;
+      }
+    }
   }
 }

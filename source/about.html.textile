@@ -1,6 +1,7 @@
 ---
 title: TODO This is the about page title
 description: TODO This is the about page description
+layout: layout_about
 ---
 
 h1. This is H1 Header
