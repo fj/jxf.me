@@ -3,12 +3,19 @@ $base-padding: 50px 10px 50px 10px;
 $mid-padding: 20px 10px 20px 10px;
 $mid-padding: 10px;
 
+@mixin opacity($alpha){
+  -moz-opacity: $alpha;
+  -khtml-opacity: $alpha;
+  opacity: $alpha;
+}
+
 body{
   background-color: #fff;
   font-family: $font-text;
   img{
     width: 100%;
     height: auto;
+    @include opacity(0.7);
   }
   a{
     text-decoration: none;

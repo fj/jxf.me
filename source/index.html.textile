@@ -16,11 +16,17 @@ h3(title). Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel
 <section>
 <div class="contain">
 <div class="col-6-12">
-!(profile)http://placehold.it/400x200!
+!(profile)/assets/images/placeholder.png!
 </div>
 <div class="col-6-12">
 
-p. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia est felis, nec tristique massa pulvinar nec. Nullam iaculis lorem nibh, eu vehicula enim euismod non. Duis lobortis, enim eget accumsan sagittis, ligula velit malesuada velit, quis vulputate magna diam vel elit. Donec posuere purus neque, et posuere velit convallis nec. Phasellus sapien ipsum, sodales vel lobortis ac, fringilla facilisis diam. Vestibulum at tellus vitae magna tempus blandit ac a nunc. Suspendisse sodales eget risus eu hendrerit.
+h2. About John
+
+p. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia est felis, nec tristique massa pulvinar nec. Nullam iaculis lorem nibh, eu vehicula enim euismod non. Duis lobortis, enim eget accumsan sagittis.
+
+p. Phasellus sapien ipsum, sodales vel lobortis ac, fringilla facilisis diam. Vestibulum at tellus vitae magna tempus blandit ac a nunc. Suspendisse sodales eget risus eu hendrerit.
+
+"(btn)View my work":/portfolio
 
 </div>
 </div>

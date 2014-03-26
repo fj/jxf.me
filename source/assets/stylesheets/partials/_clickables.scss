@@ -1,1 +1,8 @@
 //Buttons and link styles
+.btn{
+  display: block;
+  background-color: $c-standard;
+  color: $c-base-light;
+  padding: 10px;
+  text-align: center;
+}
