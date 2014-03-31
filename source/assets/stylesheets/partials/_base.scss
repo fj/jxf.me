@@ -16,6 +16,7 @@ body{
     width: 100%;
     height: auto;
     @include opacity(0.7);
+    padding: 0px 20px 0px 20px;
   }
   a{
     text-decoration: none;
@@ -33,24 +34,31 @@ body{
   line-height: 95px;
   text-align: center;
   border: 5px solid $c-standard;
-  margin: auto;
+  margin: 50px auto 0px auto;
+}
+.header-logo{
+  float: left;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 nav{
   width: 100%;
   top: 0px;
   right: 0px;
   left: 0px;
-  background-color: $c-standard;
-  padding: 20px;
+  background-color: $c_light-alt;
+  padding: 30px 20px 30px 20px;
+  @extend .cf;
   ul{
-    text-align: center;
+    float: right;
     li{
       text-align: center;
       display: inline-block;
       margin: 0px 10px 0px 10px;
       a{
-        color: $c-base-light;
+        color: $c-mid;
         font-size: 16px;
+        font-weight: 700;
       }
     }
   }
@@ -65,32 +73,28 @@ nav{
 }
 .title{
   max-width: 500px;
-  margin: auto;
+  margin: 0px auto 20px auto;
   width: 100%;
   font-family: $font-text;
   text-align: center;
   line-height: 2;
   color: $c-light;
-  padding: 0px;
-}
-.splash{
-  background-color: #e3e3e3;
-  padding: $base-padding;
+  padding: 20px 0px 20px 0px;
+  border-bottom: 2px solid #ddd;
 }
 section{
   padding: $base-padding;
-  p{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: $c-mid;
-  }
 }
 img.profile{
   display: block;
   max-width: 400px;
   max-height: 400px;
   margin: auto;
+}
+.post{
+  max-width: 500px;
+  margin: 0px auto 0px auto;
+  width: 100%;
 }
 footer{
   @extend .cf;
@@ -111,5 +115,25 @@ footer{
         color: $c_base-light;
       }
     }
+  }
+}
+@media handheld, only screen and (max-width: 767px){
+  .contain{
+    width: 100%;
+    min-width: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  [class*='col-']{
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

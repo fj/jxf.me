@@ -1,8 +1,9 @@
 %nav
-  %ul
-    %li
-      = link_to 'Home', '/'
-    %li
-      = link_to 'Portfolio', '/portfolio'
-    %li
-      = link_to 'Blog', '/blog'
+  %div{:class => 'contain'}
+    %div{:class => 'header-logo'}
+      = link_to 'John Feminella', '/'
+    %ul
+      %li
+        = link_to 'Portfolio', '/portfolio'
+      %li
+        = link_to 'Blog', '/blog'

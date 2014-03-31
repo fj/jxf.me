@@ -17,7 +17,7 @@ body{
 }
 .contain{
   width: 100%;
-  max-width: 960px;
+  max-width: 855px;
   min-width: 755px;
   margin: 0 auto;
   overflow: hidden;
@@ -89,24 +89,4 @@ body{
 }
 .col-7-12{
   width: 58.33%
-}
-@media handheld, only screen and (max-width: 767px){
-  .contain{
-    width: 100%;
-    min-width: 0;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  [class*='col-']{
-    width: auto;
-    float: none;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }

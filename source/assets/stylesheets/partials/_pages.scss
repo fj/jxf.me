@@ -1,0 +1,64 @@
+.index{
+  p{
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $c-mid;
+  }
+  h2{
+    text-align: center;
+  }
+  .btn{
+    margin-bottom: 20px;
+  }
+  .post{
+    border-top: 2px solid #ddd;
+    padding: 20px 0px 0px 0px;
+    a{
+      background-color: $c-standard;
+      padding: 10px;
+      color: $c-base-light;
+      display: block;
+      max-width: 100px;
+      margin: 10px 0px 0px 0px;
+      font-size: 14px;
+    }
+  }
+  .post:last-child{
+    margin-bottom: 20px;
+  }
+}
+@media handheld, only screen and (max-width: 767px){
+  .title{
+    padding: 20px;
+  }
+  .index{
+    .post-title,
+    h2,
+    p{
+      padding: 0px 20px 10px 20px;
+    }
+    .post{
+      a{
+        max-width: 400px;
+        margin: 0px 20px 0px 20px;
+      }
+    }
+  }
+  footer{
+    p.left{
+      float: none;
+      text-align: center;
+    }
+    ul.right{
+      float: none;
+      text-align: center;
+      li{
+        text-align: center;
+      }
+    }
+  }
+}

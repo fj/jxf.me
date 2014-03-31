@@ -4,21 +4,11 @@ description: TODO This is the homepage description
 layout: layout_homepage
 ---
 
-<div class="splash">
-
 h1(logo). JXF
-
-h2(name). John Feminella
 
 h3(title). Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel lectus ultrices, condimentum enim et, varius lorem. In sagittis a nisl nec auctor.
 
-</div>
-<section>
-<div class="contain">
-<div class="col-6-12">
 !(profile)/assets/images/placeholder.png!
-</div>
-<div class="col-6-12">
 
 h2. About John
 
@@ -27,7 +17,3 @@ p. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia est felis
 p. Phasellus sapien ipsum, sodales vel lobortis ac, fringilla facilisis diam. Vestibulum at tellus vitae magna tempus blandit ac a nunc. Suspendisse sodales eget risus eu hendrerit.
 
 "(btn)View my work":/portfolio
-
-</div>
-</div>
-</section>
