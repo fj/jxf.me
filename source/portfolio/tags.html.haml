@@ -1,0 +1,21 @@
+---
+title: Tags
+blog: photos
+---
+.row
+  .columns.large-12
+    =partial "photos/nav"
+
+    %ul.large-block-grid-4.small-block-grid-1
+      -blog.tags.sort_by{|t| t[0] }.each do |tag_name, articles|
+        -article = articles.first
+        %li
+          %figure.hortizonal{id: article.data.photo}
+            %figcaption
+              %h2
+                =tag_name
+                %small #{articles.count} photos
+            =link_to "/photos/tags/#{tag_name}" do 
+              =thumbnail "/images/gallery/#{article.data.photo}", :small, width: "200"
+
+      

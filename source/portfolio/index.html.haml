@@ -1,0 +1,21 @@
+---
+title: All Photos
+blog: photos
+pageable: true
+per_page: 12
+---
+.row
+  .columns.large-12
+    =partial "photos/nav"
+    =partial "photos/photos", locals:{page_articles: page_articles}
+
+    -if paginate
+      .pager
+        -if prev_page
+          %span.prev
+            &laquo;
+            =link_to 'Newer', prev_page
+        -if next_page
+          %span.next
+            =link_to 'Older', next_page
+            &raquo;

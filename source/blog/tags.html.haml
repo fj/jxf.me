@@ -1,0 +1,10 @@
+---
+title: "TODO"
+blog: blog
+layout: layout
+---
+%ul
+  -blog("blog").tags.sort_by{|t| t[0] }.each do |tag_name, articles|
+    %li
+      =link_to tag_name, "/blog/tags/#{tag_name}"
+      (#{articles.count})

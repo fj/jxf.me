@@ -16,16 +16,8 @@
   }
   .post{
     border-top: 2px solid #ddd;
-    padding: 20px 0px 0px 0px;
-    a{
-      background-color: $c-standard;
-      padding: 10px;
-      color: $c-base-light;
-      display: block;
-      max-width: 100px;
-      margin: 10px 0px 0px 0px;
-      font-size: 14px;
-    }
+    padding: 10px 0px 0px 0px;
+    margin: 10px auto 0px auto;
   }
   .post:last-child{
     margin-bottom: 20px;

@@ -9,3 +9,12 @@ gem "middleman-favicon-maker"
 gem 'RedCloth'
 
 gem 'haml'
+
+gem 'middleman-blog'
+
+gem "middleman-syntax"
+
+gem "middleman-google-analytics"
+
+gem "builder", "~> 3.0.0"
+
