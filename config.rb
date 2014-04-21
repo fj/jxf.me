@@ -1,4 +1,10 @@
+require 'tilt'
+require 'RedCloth'
+
 set :markdown_engine, :RedCloth
+set :markdown,
+      :smartypants => true,
+      :prettify => true
 
 activate :directory_indexes
 
@@ -15,6 +21,7 @@ activate :blog do |blog|
   blog.prefix = "blog"
   blog.permalink = ":year/:month/:day/:title.html"
   blog.sources = ":year-:month-:day-:title.html"
+  #blog.sources = ":year-:month-:day-:title"
   blog.taglink = "tags/:tag.html"
   blog.layout = "post"
   blog.summary_separator = /(READMORE)/
@@ -24,24 +31,24 @@ activate :blog do |blog|
   blog.tag_template = "blog/tag.html"
   blog.calendar_template = "blog/calendar.html"
   blog.paginate = true
-  blog.per_page = 10
+  blog.per_page = 2
   blog.page_link = "page/:num"
 end
 
-activate :blog do |blog|
-  blog.name = "portfolio"
-  blog.prefix = "portfolio"
-  blog.permalink = ":title.html"
-  blog.sources = ":year-:month-:day-:title.html"
-  blog.taglink = "tags/:tag.html"
-  blog.year_link = ":year.html"
-  blog.layout = "photos"
-  blog.default_extension = ".textile"
-  blog.tag_template = "photos/tag.html"
-  blog.calendar_template = "photos/calendar.html"
-  blog.paginate = true
-  blog.per_page = 12
-  blog.page_link = "page/:num"
+activate :blog do |portfolio|
+  portfolio.name = "portfolio"
+  portfolio.prefix = "portfolio"
+  portfolio.permalink = ":title.html"
+  portfolio.sources = ":year-:month-:day-:title.html"
+  portfolio.taglink = "tags/:tag.html"
+  portfolio.year_link = ":year.html"
+  portfolio.layout = "photos"
+  portfolio.default_extension = ".textile"
+  portfolio.tag_template = "photos/tag.html"
+  portfolio.calendar_template = "photos/calendar.html"
+  portfolio.paginate = true
+  portfolio.per_page = 12
+  portfolio.page_link = "page/:num"
 end
 
 page "/feed.xml", layout: false

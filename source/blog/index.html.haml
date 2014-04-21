@@ -2,24 +2,27 @@
 title: "TODO"
 blog: blog
 pageable: true
-per_page: 10
 layout: layout
 ---
--page_articles.each_with_index do |article, i|
-  %article{class: article.data.link ? "blog link" : "blog"}
-    %div{:class => 'post'}
-      %h1.post-title=blog_link article
-      %p.post-excerpt=article.body
-      %p
-        =dt article.date
-        %span=tag_list article.tags
+%div{:class => 'blog-wrapper'}
+  -page_articles.sort_by{|a| a.date }.reverse.each_with_index do |article, i|
+    %article{class: article.data.link ? "blog link" : "blog"}
+      %div{:class => 'post'}
+        %h1.post-title=blog_link article
+        =article.summary(250, "...")
+        %p
+          =page_start
+          =page_end
+          =dt article.date
+          %span=tag_list article.tags
 
   -if paginate
-    -if prev_page
-      %span
-        &laquo;
-        =link_to 'Newer', prev_page
-    -if next_page
-      %span
-        =link_to 'Older', next_page
-        &raquo;
+    %span.pagination
+      -if prev_page
+        %span.prev_page
+          &laquo;
+          =link_to 'Newer', prev_page, :id => 'prev_page_link'
+      -if next_page
+        %span.next_page
+          =link_to 'Older', next_page, :id => 'next_page_link'
+          &raquo;

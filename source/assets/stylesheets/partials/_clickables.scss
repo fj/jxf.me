@@ -1,8 +1,22 @@
 //Buttons and link styles
+@mixin easing($rate){
+  -moz-transition: all $rate ease;
+  -webkit-transition: all $rate ease;
+  -o-transition: all $rate ease;
+  transition: all $rate ease;
+}
 .btn{
   display: block;
   background-color: $c-standard;
   color: $c-base-light;
   padding: 10px;
   text-align: center;
+}
+a{
+  @include easing(350ms);
+    &:hover{
+      @include easing(350ms);
+      color: #999;
+      border-color: #999;
+  }
 }
