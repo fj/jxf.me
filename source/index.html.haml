@@ -12,6 +12,14 @@ blog: blog
 %div.name
   John Feminella
 
+%ul.social
+  %li
+    %a{:href => 'https://twitter.com/'}
+      <i class="fa fa-twitter"></i>
+  %li
+    %a{:href => 'https://linkedin.com/'}
+      <i class="fa fa-linkedin"></i>
+
 %div.desc
   %h3 Technologist
   %h3 Entrepreneur
@@ -26,8 +34,11 @@ blog: blog
           %div{:class => 'post'}
             %h1.post-title
               <i class="fa fa-chain"></i>
+              %span.date-meta
+                =article.date.strftime('%b %e %Y')
               =blog_link article
               =link_to article.summary(50, "»")
+        %a.btn{href: "/blog"} View more »
     %div{:class => 'col-6-12'}
       %aside
         %h2 Activities
@@ -35,5 +46,8 @@ blog: blog
           %div{:class => 'post'}
             %h1.post-title
               <i class="fa fa-chain"></i>
+              %span.date-meta
+                =article.date.strftime('%b %e %Y')
               =blog_link article
               =link_to article.summary(50, "»")
+        %a.btn{href: "/blog"} View more »

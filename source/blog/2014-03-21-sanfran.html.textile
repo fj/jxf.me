@@ -1,5 +1,5 @@
 ---
-title: "10"
+title: "More Blog Posts Are Coming Here"
 tags:
   - sometag
 date: "2014-03-21"

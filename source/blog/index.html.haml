@@ -9,20 +9,16 @@ layout: layout
     %article{class: article.data.link ? "blog link" : "blog"}
       %div{:class => 'post'}
         %h1.post-title=blog_link article
-        =article.summary(250, "...")
         %p
-          =page_start
-          =page_end
           =dt article.date
           %span=tag_list article.tags
+        =article.summary(250, "...")
 
   -if paginate
     %span.pagination
       -if prev_page
         %span.prev_page
-          &laquo;
-          =link_to 'Newer', prev_page, :id => 'prev_page_link'
+          =link_to '', prev_page, :id => 'prev_page_link'
       -if next_page
         %span.next_page
-          =link_to 'Older', next_page, :id => 'next_page_link'
-          &raquo;
+          =link_to '', next_page, :id => 'next_page_link'

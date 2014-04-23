@@ -35,7 +35,7 @@ nav{
   right: 0px;
   left: 0px;
   background-color: $c_light-alt;
-  padding: 30px 20px 30px 20px;
+  padding: 15px 20px 15px 20px;
   @extend .cf;
   ul{
     text-align: center;
@@ -53,14 +53,14 @@ nav{
 }
 .header-logo{
   a{
-    font-size: 20px;
-    width: 60px;
-    height: 60px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
     color: $c-standard;
-    line-height: 58px;
+    line-height: 45px;
     text-align: center;
     border: 3px solid $c-standard;
     margin: 0px auto 0px auto;
@@ -121,6 +121,15 @@ nav{
 .stream{
   background-color: #f4f4f4;
   margin: 50px 0px 0px 0px;
+  a.btn{
+    max-width: 200px;
+    background-color: transparent;
+    color: $c_standard;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+    font-weight: bold;
+  }
 }
 section{
   padding: $base-padding;
@@ -137,10 +146,33 @@ img.profile{
   width: 100%;
 }
 .blog{
-  padding: 30px 20px 0px 20px;
+  padding: 15px 20px 15px 20px;
   p{
     line-height: 1.5;
     color: #999;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+.date-meta{
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: $font-text;
+  color: #999;
+}
+.social{
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+  li{
+    text-align: center;
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+    a{
+      font-size: 20px;
+    }
   }
 }
 footer{

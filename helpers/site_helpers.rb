@@ -3,7 +3,7 @@ module SiteHelpers
 #Set default title
   def page_title
     #Append frontmatter title to default
-    title = "JXF"
+    title = "jxf"
     if data.page.title
       title << " | " + data.page.title
     end
