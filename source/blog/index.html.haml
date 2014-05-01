@@ -2,18 +2,20 @@
 title: "TODO"
 blog: blog
 pageable: true
-layout: layout
+layout: layout_blog
 ---
-%div{:class => 'blog-wrapper'}
-  -page_articles.sort_by{|a| a.date }.reverse.each_with_index do |article, i|
-    %article{class: article.data.link ? "blog link" : "blog"}
-      %div{:class => 'post'}
-        %h1.post-title=blog_link article
+-page_articles.sort_by{|a| a.date }.reverse.each_with_index do |article, i|
+  %article{class: article.data.link ? "blog link" : "blog"}
+    %div{:class => 'grid grid-pad'}
+      %div{:class => 'col-3-12'}
         %p
           =dt article.date
-          %span=tag_list article.tags
+          %div{:class => 'tags'}=tag_list article.tags
+      %div{:class => 'col-9-12'}
+        %h1.post-title
+          <i class="fa fa-chain"></i>
+          =blog_link article
         =article.summary(250, "...")
-
   -if paginate
     %span.pagination
       -if prev_page

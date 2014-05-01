@@ -42,10 +42,10 @@ activate :blog do |portfolio|
   portfolio.sources = ":year-:month-:day-:title.html"
   portfolio.taglink = "tags/:tag.html"
   portfolio.year_link = ":year.html"
-  portfolio.layout = "photos"
+  portfolio.layout = "item"
   portfolio.default_extension = ".textile"
-  portfolio.tag_template = "photos/tag.html"
-  portfolio.calendar_template = "photos/calendar.html"
+  portfolio.tag_template = "portfolio/tag.html"
+  portfolio.calendar_template = "portfolio/calendar.html"
   portfolio.paginate = true
   portfolio.per_page = 12
   portfolio.page_link = "page/:num"

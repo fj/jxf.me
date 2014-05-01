@@ -1,21 +1,13 @@
 ---
-title: All Photos
-blog: photos
+title: "TODO"
+blog: portfolio
 pageable: true
-per_page: 12
+layout: layout_portfolio
 ---
-.row
-  .columns.large-12
-    =partial "photos/nav"
-    =partial "photos/photos", locals:{page_articles: page_articles}
-
-    -if paginate
-      .pager
-        -if prev_page
-          %span.prev
-            &laquo;
-            =link_to 'Newer', prev_page
-        -if next_page
-          %span.next
-            =link_to 'Older', next_page
-            &raquo;
+-page_articles.sort_by{|a| a.date }.reverse.each_with_index do |article, i|
+  %article{class: article.data.link ? "blog link" : "blog"}
+    %div{:class => "grid grid-pad"}
+      %div{:class => "col-6-12"}
+        %div{:class => "port-item"}
+          %h1.post-title=blog_link article
+          =article.summary(250, "...")

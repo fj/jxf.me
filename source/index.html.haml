@@ -28,26 +28,30 @@ blog: blog
 %section{:class => 'stream'}
   %div{:class => 'contain contain-pad'}
     %div{:class => 'col-6-12'}
-      %aside
-        %h2 Writings
-        -latest_articles[0...3].each do |article|
-          %div{:class => 'post'}
-            %h1.post-title
-              <i class="fa fa-chain"></i>
-              %span.date-meta
-                =article.date.strftime('%b %e %Y')
-              =blog_link article
-              =link_to article.summary(50, "»")
-        %a.btn{href: "/blog"} View more »
+      %div{:class => 'inner-post'}
+        %aside
+          %h2
+            Writings
+            %span
+              %a.btn{href: "/blog"} View more »
+          -latest_articles[0...3].each do |article|
+            %div{:class => 'post'}
+              %h1.post-title
+                <i class="fa fa-chain"></i>
+                %span.date-meta
+                  =article.date.strftime('%b %e')
+                =blog_link article
     %div{:class => 'col-6-12'}
-      %aside
-        %h2 Activities
-        -latest_articles[0...3].each do |article|
-          %div{:class => 'post'}
-            %h1.post-title
-              <i class="fa fa-chain"></i>
-              %span.date-meta
-                =article.date.strftime('%b %e %Y')
-              =blog_link article
-              =link_to article.summary(50, "»")
-        %a.btn{href: "/blog"} View more »
+      %div{:class => 'inner-post'}
+        %aside
+          %h2
+            Activities
+            %span
+              %a.btn{href: "/blog"} View more »
+          -latest_articles[0...3].each do |article|
+            %div{:class => 'post'}
+              %h1.post-title
+                <i class="fa fa-chain"></i>
+                %span.date-meta
+                  =article.date.strftime('%b %e')
+                =blog_link article

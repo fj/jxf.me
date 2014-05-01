@@ -1,21 +1,8 @@
 ---
+title: "TODO"
+blog: blog
+layout: layout
 pageable: true
-blog: photos
 ---
--content_for :title, "Photos tagged #{tagname}"
-
-.row
-  .columns.large-12
-    =partial "photos/nav", locals:{active: tagname}
-    =partial "photos/photos", locals:{page_articles: page_articles}
-
-    -if paginate
-      .pager
-        -if prev_page
-          %span.prev
-            &laquo;
-            =link_to 'Newer', prev_page
-        -if next_page
-          %span.next
-            =link_to 'Older', next_page
-            &raquo;
+-content_for(:title, "Posts tagged #{tagname}")
+=partial "blog/articles"

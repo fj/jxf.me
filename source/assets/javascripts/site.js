@@ -23,7 +23,7 @@ jQuery(function() {
         main = $('article', html);
         pagination = $('.pagination', html)
         //console.log(main);
-        $('.main:last-child').append(main, pagination);
+        $('.main-blog:last-child').append(main, pagination);
       }
     });
     return $(window).scroll();

@@ -1,21 +1,7 @@
 ---
-pageable: true
-blog: photos
+layout: blog_page
+blog: blog
+pageable: false
 ---
--content_for(:title, "Photos in #{year}")
-
-.row
-  .columns.large-12
-    =partial "photos/nav", locals:{active: year}
-    =partial "photos/photos", locals:{page_articles: page_articles}
-
-    -if paginate
-      .pager
-        -if prev_page
-          %span.prev
-            &laquo;
-            =link_to 'Newer', prev_page
-        -if next_page
-          %span.next
-            =link_to 'Older', next_page
-            &raquo;
+-content_for(:title, "Posts in #{year}")
+=partial "blog/articles"
