@@ -10,4 +10,5 @@ layout: layout_portfolio
       %div{:class => "col-6-12"}
         %div{:class => "port-item"}
           %h1.post-title=blog_link article
+          %div{:class => 'tags'}=tag_list article.tags
           =article.summary(250, "...")

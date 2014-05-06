@@ -33,6 +33,19 @@ body{
 .contain-pad > [class*='col-']:last-of-type{
   padding-right: 20px;
 }
+.small-grid{
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  [class*='col-']{
+    padding-right: 0px;
+  }
+}
+.small-grid:after{
+  content: "";
+  display: table;
+  clear: both;
+}
 .push-right{
   float: right;
 }
