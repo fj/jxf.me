@@ -1,12 +1,73 @@
 ---
-title: "Portfolio One"
+title: "Another Item"
 tags:
-  - sometag
+  - something
+  - else
+  - goes
+  - here
 date: "2014-03-22"
 ---
 !http://placehold.it/350x150(Image)!
 
-p. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra urna a quam ornare iaculis. Aliquam a pulvinar elit. Nam nulla lacus, luctus sed sem non, eleifend euismod dui. Fusce sit amet egestas erat, eget tincidunt turpis. Cras sed odio dignissim, facilisis justo in, lobortis eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent mauris lacus, lacinia quis hendrerit in, volutpat ac leo. Morbi eget fermentum mi, non luctus purus. Suspendisse in tortor eu justo dictum tincidunt vitae ut leo.
-p. Nam tellus dui, porta et vulputate id, convallis a leo. Aliquam erat volutpat. Donec pulvinar eget mi non vulputate. Nullam porta ligula consectetur iaculis tincidunt. Donec ornare est quis elit euismod mattis. Maecenas sed mi at est posuere feugiat. Duis eget sollicitudin elit. Curabitur at consectetur massa. Pellentesque sem nibh, pretium at enim nec, aliquet dapibus lacus. Curabitur pretium mollis urna, sed rhoncus diam dapibus dignissim.
+p(alert). <i class="fa fa-warning"></i> Something about this content requires a caution alert
 
-p. Morbi malesuada sodales mauris, sit amet dignissim erat ullamcorper quis. Curabitur ultrices tincidunt sem ut aliquam. Vestibulum suscipit aliquet lectus eget vestibulum. Praesent lectus metus, ullamcorper at dolor non, tristique vehicula purus. Phasellus porta turpis eu dolor varius, ut vestibulum turpis molestie. Vivamus congue sapien vel consequat euismod. Morbi a est nisl. Donec ultricies est sed massa consequat, sed aliquam felis tempor. Nullam molestie, orci sed dictum faucibus, orci ipsum ultrices tortor, in egestas ligula risus at diam. Sed eu elit suscipit turpis tempor iaculis id ut metus. Aliquam erat volutpat. Proin tempus tempus elit rhoncus aliquam. Donec feugiat scelerisque justo id fringilla. Nam condimentum, odio dignissim fermentum tempor, elit ipsum tempor libero, eu tincidunt enim erat vitae ante.
+p. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra urna a quam ornare iaculis. Aliquam a pulvinar elit. Nam nulla lacus, luctus sed sem non, eleifend euismod dui. Fusce sit amet egestas erat, eget tincidunt turpis. Cras sed odio dignissim, facilisis justo in, lobortis eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent mauris lacus, lacinia quis hendrerit in, volutpat ac leo. Morbi eget fermentum mi, non luctus purus. Suspendisse in tortor eu justo dictum tincidunt vitae ut leo.
+
+p. I _believe_ every word.
+
+p. And then? She *fell*!
+
+p. I **really** __know__.
+
+p. I **really __know__**.
+
+p. Convert with @r.to_html@
+
+<pre>
+	<html>
+		<head>
+			<title></title>
+		</head>
+		<body>
+			<h1>Soemthing here</h1>
+		</body>
+	</html>
+</pre>
+
+p(code-caption). This is a multi-line code block and this is a caption
+
+bq. A block quotation.
+
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+!http://placehold.it/350x150(Image)!
+
+p(img-caption). This is an image with a caption. Check it out
+
+|_. name |_. age |_. sex |
+| joan | 24 | f |
+| archie | 29 | m |
+| bella | 45 | f |
+
+<div class="cf">
+	<div class="col-6-12">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra urna a quam ornare iaculis. Aliquam a pulvinar elit. Nam nulla lacus, luctus sed sem non, eleifend euismod dui. Fusce sit amet egestas erat, eget tincidunt turpis. Cras sed odio dignissim, facilisis justo in, lobortis eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent mauris lacus, lacinia quis hendrerit in, volutpat ac leo. Morbi eget fermentum mi, non luctus purus. Suspendisse in tortor eu justo dictum tincidunt vitae ut leo.</p>
+	</div>
+	<div class="col-6-12">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra urna a quam ornare iaculis. Aliquam a pulvinar elit. Nam nulla lacus, luctus sed sem non, eleifend euismod dui. Fusce sit amet egestas erat, eget tincidunt turpis. Cras sed odio dignissim, facilisis justo in, lobortis eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent mauris lacus, lacinia quis hendrerit in, volutpat ac leo. Morbi eget fermentum mi, non luctus purus. Suspendisse in tortor eu justo dictum tincidunt vitae ut leo.</p>
+	</div>
+</div>
+
+p(code-caption). Two columns
+
+p. Cat is not a [1].
+
+p. A deer is not a [2].
+
+p. Breakfast is not[3].
+
+fn1. dog.
+
+fn2. horse.
+
+fn3. dinner.

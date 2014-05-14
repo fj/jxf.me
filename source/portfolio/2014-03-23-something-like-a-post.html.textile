@@ -1,5 +1,5 @@
 ---
-title: "Potfolio Two"
+title: "Something Like a Post"
 tags:
   - sometag
   - Another Tag

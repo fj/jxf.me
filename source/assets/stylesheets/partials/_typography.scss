@@ -34,3 +34,93 @@ pre,
 code{
   font-family: $font-code;
 }
+i,
+em{
+  font-style: italic;
+}
+b,
+strong{
+  font-weight: bold;
+}
+code{
+  background-color: #f0f0f0;
+  color: #d54545;
+}
+pre{
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 0px 0px;
+  background-color: #f0f0f0;
+  color: #d54545;
+}
+.img-caption,
+.code-caption{
+  border-left: 2px solid #ddd;
+  padding-left: 20px;
+  font-style: italic;
+}
+blockquote{
+  margin: 20px 0px 20px 0px;
+  font-style: italic;
+  p{
+    font-size: 18px;
+    padding: 10px 0px 10px 0px;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    display: inline-block;
+  }
+}
+.MathJax_Display{
+  text-align: left;
+}
+table{
+  margin: 10px 0px 10px 0px;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  box-sizing: border-box;
+  tr{
+    th{
+      vertical-align: bottom;
+      border-bottom: 2px solid #ddd;
+      padding: 8px;
+      line-height: 1.4;
+      color: #555;
+      font-weight: bold;
+    }
+  }
+  th{
+    text-align: left;
+  }
+  td{
+    padding: 8px;
+    color: #999;
+  }
+}
+.alert{
+  background-color: #fffabe;
+  font-weight: bold;
+  color: #cdc98d;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,11 +4,21 @@ blog: portfolio
 pageable: true
 layout: layout_portfolio
 ---
--page_articles.sort_by{|a| a.date }.reverse.each_with_index do |article, i|
-  %article{class: article.data.link ? "blog link" : "blog"}
-    %div{:class => "grid grid-pad"}
-      %div{:class => "col-6-12"}
-        %div{:class => "port-item"}
-          %h1.post-title=blog_link article
-          %div{:class => 'tags'}=tag_list article.tags
-          =article.summary(250, "...")
+- data.port_items.port_items.each_with_index do |port_items, index|
+  %article.blog
+    .feature
+      %div{:class => "grid grid-pad"}
+        %div{:class => "col-6-12"}
+          %div{:class => "port-item"}
+            %h1.post-title
+              %a{:href => "#{port_items.link}"}
+                =port_items.title
+            %img{:src => "#{port_items.image}"}
+            %div{:class => 'tags'}
+              %span=port_items.tag1
+              %span=port_items.tag2
+              %span=port_items.tag3
+              %span=port_items.tag4
+            %p.summary-block
+              <i class="fa fa-#{port_items.icon}"></i>
+              =port_items.text

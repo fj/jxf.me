@@ -1,12 +1,11 @@
 ---
-title: "Potfolio Two"
+title: "Zen Portfolio"
 tags:
   - sometag
   - Another Tag
   - something
   - else
 date: "2014-03-23"
-tooltip: "this is an article about Zen Buddhism"
 ---
 
 !http://placehold.it/350x150(Image)!
