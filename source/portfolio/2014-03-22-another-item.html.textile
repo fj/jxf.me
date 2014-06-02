@@ -13,6 +13,8 @@ p(alert). <i class="fa fa-warning"></i> Something about this content requires a 
 
 p. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra urna a quam ornare iaculis. Aliquam a pulvinar elit. Nam nulla lacus, luctus sed sem non, eleifend euismod dui. Fusce sit amet egestas erat, eget tincidunt turpis. Cras sed odio dignissim, facilisis justo in, lobortis eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent mauris lacus, lacinia quis hendrerit in, volutpat ac leo. Morbi eget fermentum mi, non luctus purus. Suspendisse in tortor eu justo dictum tincidunt vitae ut leo.
 
+p. !(img-float-left)http://placehold.it/350x150(Image)! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra urna a quam ornare iaculis. Aliquam a pulvinar elit. Nam nulla lacus, luctus sed sem non, eleifend euismod dui. Fusce sit amet egestas erat, eget tincidunt turpis. Cras sed odio dignissim, facilisis justo in, lobortis eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent mauris lacus, lacinia quis hendrerit in, volutpat ac leo. Morbi eget fermentum mi, non luctus purus. Suspendisse in tortor eu justo dictum tincidunt vitae ut leo. Nam nulla lacus, luctus sed sem non, eleifend euismod dui. Fusce sit amet egestas erat, eget tincidunt turpis. Cras sed odio dignissim, facilisis justo in, lobortis eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent mauris lacus, lacinia quis hendrerit in, volutpat ac leo. Morbi eget fermentum mi, non luctus purus. Suspendisse in tortor eu justo dictum tincidunt vitae ut leo.
+
 p. I _believe_ every word.
 
 p. And then? She *fell*!
@@ -37,6 +39,8 @@ p. Convert with @r.to_html@
 p(code-caption). This is a multi-line code block and this is a caption
 
 bq. A block quotation.
+
+p. Something goes here and then $x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$ something else goes over here.
 
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 

@@ -15,10 +15,10 @@ layout: layout_portfolio
                 =port_items.title
             %img{:src => "#{port_items.image}"}
             %div{:class => 'tags'}
-              %span=port_items.tag1
-              %span=port_items.tag2
-              %span=port_items.tag3
-              %span=port_items.tag4
+              %span.tags=port_items.tag1
+              %span.tags=port_items.tag2
+              %span.tags=port_items.tag3
+              %span.tags=port_items.tag4
             %p.summary-block
               <i class="fa fa-#{port_items.icon}"></i>
               =port_items.text

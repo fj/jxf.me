@@ -52,11 +52,18 @@ pre{
   background-color: #f0f0f0;
   color: #d54545;
 }
+p{
+  code{
+    padding: 10px;
+  }
+}
 .img-caption,
 .code-caption{
-  border-left: 2px solid #ddd;
-  padding-left: 20px;
+  padding: 10px 0px 10px 0px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   font-style: italic;
+  font-size: 12px !important;
 }
 blockquote{
   margin: 20px 0px 20px 0px;
@@ -73,8 +80,8 @@ blockquote{
   text-align: left;
 }
 table{
-  margin: 10px 0px 10px 0px;
-  width: 100%;
+  margin: 10px auto 10px auto;
+  max-width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
   box-sizing: border-box;

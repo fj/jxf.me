@@ -6,6 +6,8 @@ set :markdown,
       :smartypants => true,
       :prettify => true
 
+activate :syntax, :line_numbers => true, :inline_theme => nil
+
 activate :directory_indexes
 
 set :css_dir, 'assets/stylesheets'

@@ -20,7 +20,6 @@ body{
   background-color: #fff;
   font-family: $font-text;
   a{
-    text-decoration: none;
     color: $c_standard;
   }
   .res-img{
@@ -47,6 +46,7 @@ nav{
         color: $c-mid;
         font-size: 16px;
         font-weight: 700;
+        text-decoration: none;
       }
     }
   }
@@ -149,9 +149,10 @@ img.profile{
   p{
     line-height: 1.5;
     color: #999;
+    font-size: 16px;
   }
   img{
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
 }
@@ -186,6 +187,9 @@ img.profile{
 }
 .tags{
   line-height: 1.5;
+  a{
+    text-decoration: none;
+  }
 }
 .port-item{
   padding: 30px;
@@ -210,6 +214,10 @@ footer{
       }
     }
   }
+}
+.img-float-left{
+  float: left;
+  padding-right: 20px;
 }
 @media handheld, only screen and (max-width: 767px){
   .contain{
