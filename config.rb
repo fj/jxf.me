@@ -71,7 +71,7 @@ end
 helpers do
   def dt(datetime)
     datetime = Date.parse(datetime) if datetime.is_a? String
-    "<span class=\"datetime\">#{datetime.strftime("%b %d, '%y")}</span>"
+    "<span class=\"datetime\" title=>#{datetime.strftime("%b %d, '%y")}</span>"
   end
 
   def tag_list(array, prefix="/blog")
@@ -103,5 +103,9 @@ helpers do
 
   def get_page_title
     yield_content(:title) || current_page.data.title
+  end
+
+  def get_article_icon
+    current_page.data.icon
   end
 end

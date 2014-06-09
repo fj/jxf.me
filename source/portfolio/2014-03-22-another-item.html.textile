@@ -6,6 +6,9 @@ tags:
   - goes
   - here
 date: "2014-03-22"
+icon: "file-text-o"
+image: "http://placehold.it/350x150"
+summary: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 ---
 !http://placehold.it/350x150(Image)!
 
