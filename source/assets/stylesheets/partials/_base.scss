@@ -144,6 +144,11 @@ img.profile{
   max-width: 500px;
   margin: 0px auto 0px auto;
   width: 100%;
+  .post-title{
+    a{
+      text-decoration: none;
+    }
+  }
 }
 .blog{
   p{
@@ -180,6 +185,9 @@ img.profile{
   padding: 50px 20px 50px 20px;
   .post-title{
     line-height: 1.3;
+    a{
+      text-decoration: none;
+    }
   }
 }
 .main-blog{
@@ -218,6 +226,9 @@ footer{
 .img-float-left{
   float: left;
   padding-right: 20px;
+}
+.post-icon{
+  padding-right: 10px;
 }
 @media handheld, only screen and (max-width: 767px){
   .contain{

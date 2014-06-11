@@ -4,7 +4,7 @@ blog: blog
 pageable: true
 layout: layout_blog
 ---
--page_articles.sort_by{|a| a.date }.reverse.each_with_index do |article, i|
+-page_articles.sort_by{|a| a.date}.reverse.each_with_index do |article, i|
   %article{class: article.data.link ? "blog link" : "blog"}
     %div{:class => 'grid grid-pad'}
       %div{:class => 'col-3-12'}
@@ -18,6 +18,8 @@ layout: layout_blog
         %p
           =article.data.summary
         =link_to 'Read more »', article
+        %p
+          =article.data.kind
   -if paginate
     %span.pagination
       -if prev_page

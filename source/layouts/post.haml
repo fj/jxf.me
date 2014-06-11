@@ -2,10 +2,13 @@
   %section
     %article{class: current_page.data.link ? "blog link" : "blog"}
       %header
-        %h1=blog_link current_page
+        %h1
+          %span.post-icon
+            <i class="fa fa-#{current_page.data.icon}"></i>
+          =blog_link current_page
         %p
           =dt current_page.date
-          %span=tag_list current_page.data.tags
+          %span.tags=tag_list current_page.data.tags
       =yield
       -if current_page.previous_article
         %span.prev

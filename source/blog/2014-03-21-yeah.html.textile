@@ -5,6 +5,7 @@ tags:
 date: "2014-03-21"
 summary: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 icon: "bullhorn"
+kind: "portfolio"
 ---
 
 p. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra urna a quam ornare iaculis. Aliquam a pulvinar elit. Nam nulla lacus, luctus sed sem non, eleifend euismod dui. Fusce sit amet egestas erat, eget tincidunt turpis. Cras sed odio dignissim, facilisis justo in, lobortis eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent mauris lacus, lacinia quis hendrerit in, volutpat ac leo. Morbi eget fermentum mi, non luctus purus. Suspendisse in tortor eu justo dictum tincidunt vitae ut leo.
