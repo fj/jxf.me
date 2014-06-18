@@ -1,0 +1,19 @@
+---
+title: "TODO"
+blog: blog
+pageable: true
+layout: layout_portfolio
+---
+- blog.articles.select { |i| i.data.kind == 'portfolio' }.each do |article|
+  .feature
+    %div{:class => 'grid grid-pad'}
+      %div{:class => "col-6-12"}
+        %div{:class => "port-item"}
+          %h1.post-title
+            <i class="fa fa-#{article.data.icon}"></i>
+            =blog_link article
+          %img{:src => "#{article.data.image}"}
+          %div{:class => 'tags'}
+            =tag_list article.tags
+          %p
+            =article.data.summary

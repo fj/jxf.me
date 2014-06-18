@@ -41,6 +41,7 @@
     padding: 30px;
   }
 }
+.feature,
 .blog{
   .article-date{
     font-size: 16px;
@@ -70,6 +71,11 @@
         text-decoration: none;
       }
     }
+  }
+}
+.activities{
+  article.blog{
+    padding-bottom: 30px;
   }
 }
 .tag-section{

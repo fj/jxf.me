@@ -37,22 +37,6 @@ activate :blog do |blog|
   blog.page_link = "page/:num"
 end
 
-activate :blog do |portfolio|
-  portfolio.name = "portfolio"
-  portfolio.prefix = "portfolio"
-  portfolio.permalink = ":title.html"
-  portfolio.sources = ":year-:month-:day-:title.html"
-  portfolio.taglink = "tags/:tag.html"
-  portfolio.year_link = ":year.html"
-  portfolio.layout = "item"
-  portfolio.default_extension = ".textile"
-  portfolio.tag_template = "portfolio/tag.html"
-  portfolio.calendar_template = "portfolio/calendar.html"
-  portfolio.paginate = true
-  portfolio.per_page = 12
-  portfolio.page_link = "page/:num"
-end
-
 page "/feed.xml", layout: false
 
 configure :build do

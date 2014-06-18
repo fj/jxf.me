@@ -34,7 +34,7 @@ blog: blog
             Writings
             %span
               %a.btn{href: "/blog"} View more »
-          -latest_articles[0...3].each do |article|
+          - blog.articles.select { |i| i.data.kind == 'post' }.take(3).each do |article|
             %div{:class => 'post'}
               %div{:class => 'small-grid'}
                 %div{:class => 'col-3-12'}
@@ -52,7 +52,7 @@ blog: blog
             Activities
             %span
               %a.btn{href: "/activities"} View more »
-          -blog.articles.sort_by{|i| i.data.kind == :activity}[0...3].each do |article, i|
+          - blog.articles.select { |i| i.data.kind == 'activity' }.take(3).each do |article|
             %div{:class => 'post'}
               %div{:class => 'small-grid'}
                 %div{:class => 'col-3-12'}
