@@ -12,6 +12,32 @@ activity: "This is an activity"
 kind: post
 ---
 
+Inline example: $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\)
+
+And this:
+
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+This inline: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+Convert with @r.to_html@
+
+<pre><code class="language-css">p { color: red }</code></pre>
+
+<pre>
+<code class="language-ruby">
+def get_page_title
+  yield_content(:title) || current_page.data.title
+end
+</code>
+</pre>
+
+<pre><code class="language-javascript">function Panel(element, canClose, closeHandler) {
+  this.element = element;
+  this.canClose = canClose;
+  this.closeHandler = function () { if (closeHandler) closeHandler() };
+}</code></pre>
+
 p. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 p. Define the summary block by placing the read more separator where you want it to end, as shown below. You can remove the read more link in the index blog template.
