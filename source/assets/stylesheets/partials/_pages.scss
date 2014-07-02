@@ -24,8 +24,12 @@
     margin-bottom: 20px;
   }
   .post-title{
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.5;
+  }
+  .post{
+    .post-title{
+    }
   }
   aside{
     h2{
@@ -85,6 +89,14 @@
       margin: 10px 0px 10px 0px;
       background-color: #f0f0f0;
       padding: 20px;
+    }
+  }
+}
+.portfolio{
+  .post-title{
+    .fa,
+    a{
+      font-size: 25px;
     }
   }
 }

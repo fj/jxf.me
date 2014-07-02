@@ -4,14 +4,16 @@ blog: blog
 pageable: true
 layout: layout_blog
 ---
--page_articles.sort_by{|a| a.date}.reverse.each_with_index do |article, a|
+- blog.articles.select { |i| i.data.kind == 'post' }.each do |article|
   %article{class: article.data.link ? "blog link" : "blog"}
     %div{:class => 'grid grid-pad'}
       %div{:class => 'col-3-12'}
-        %p{:class => 'article-date'}
-          <i class="fa fa-#{article.data.icon}"></i>
-          =dt article.date
-          %div{:class => 'tags'}=tag_list article.tags
+        %div{:class => 'cf article-meta'}
+          %div{:class => 'col-2-12'}
+            <i class="fa fa-#{article.data.icon}"></i>
+          %div{:class => 'col-10-12'}
+            =dt article.date
+            %div{:class => 'tags'}=tag_list article.tags
       %div{:class => 'col-9-12'}
         %h1.post-title
           =blog_link article

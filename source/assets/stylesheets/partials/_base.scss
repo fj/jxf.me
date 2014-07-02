@@ -174,7 +174,7 @@ img.profile{
   }
 }
 .date-meta{
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
   font-family: $font-text;
@@ -241,6 +241,13 @@ footer{
 }
 .post-icon{
   padding-right: 10px;
+}
+.article-meta{
+  margin: 10px 0px 0px 0px;
+  color: #999;
+  a{
+    color: #999;
+  }
 }
 @media handheld, only screen and (max-width: 767px){
   .contain{
