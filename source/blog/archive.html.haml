@@ -2,7 +2,6 @@
 title: "TODO"
 pageable: false
 blog: blog
-layout: blog_page
 ---
 %ul
   -blog.articles.group_by{|a| a.date.year }.each do |year, articles|

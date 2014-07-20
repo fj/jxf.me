@@ -2,22 +2,24 @@
 # the following line to use "https"
 source 'https://rubygems.org'
 
-gem "middleman", "~>3.2.2"
+gem 'middleman'
 
-gem "middleman-favicon-maker"
+gem 'middleman-favicon-maker'
 
 gem 'tilt'
 
 gem 'RedCloth'
 
+gem 'redcarpet'
+
 gem 'haml'
 
 gem 'middleman-blog'
 
-gem "middleman-syntax"
+gem 'middleman-syntax'
 
-gem "middleman-google-analytics"
+gem 'middleman-google-analytics'
 
-gem "builder", "~> 3.0.0"
+gem 'builder'
 
-gem "nokogiri"
+gem 'nokogiri'

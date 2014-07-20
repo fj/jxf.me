@@ -2,11 +2,9 @@ require 'tilt'
 require 'RedCloth'
 
 set :markdown_engine, :RedCloth
-set :markdown,
-      :smartypants => true,
-      :prettify => true
+set :markdown, :smartypants => true, :prettify => true
 
-activate :syntax, :line_numbers => true, :inline_theme => nil
+activate :syntax, :line_numbers => true
 
 activate :directory_indexes
 
