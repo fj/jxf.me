@@ -6,12 +6,6 @@ gem 'middleman'
 
 gem 'middleman-favicon-maker'
 
-gem 'tilt'
-
-gem 'RedCloth'
-
-gem 'redcarpet'
-
 gem 'haml'
 
 gem 'middleman-blog'

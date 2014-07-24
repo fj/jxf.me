@@ -9,6 +9,14 @@ icon: "picture-o"
 kind: portfolio
 ---
 
+~~~ ruby
+
+def my_cool_method(message)
+  puts message
+end
+
+~~~
+
 bc.. puts "This style (notice the double dot) handles blank lines."
 
 p. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra urna a quam ornare iaculis. Aliquam a pulvinar elit. Nam nulla lacus, luctus sed sem non, eleifend euismod dui. Fusce sit amet egestas erat, eget tincidunt turpis. Cras sed odio dignissim, facilisis justo in, lobortis eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent mauris lacus, lacinia quis hendrerit in, volutpat ac leo. Morbi eget fermentum mi, non luctus purus. Suspendisse in tortor eu justo dictum tincidunt vitae ut leo.

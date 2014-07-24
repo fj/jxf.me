@@ -1,10 +1,5 @@
-require 'tilt'
-require 'RedCloth'
-
-set :markdown_engine, :RedCloth
-set :markdown, :smartypants => true, :prettify => true
-
-activate :syntax, :line_numbers => true
+set :markdown_engine, :kramdown
+activate :syntax
 
 activate :directory_indexes
 
